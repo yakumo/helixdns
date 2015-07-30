@@ -20,5 +20,5 @@ RUN go install github.com/mrwilson/helixdns
 
 EXPOSE 53
 
-CMD ["helixdns", "-port", "53", "-forward", "8.8.8.8:53"]
-
+ENTRYPOINT ["helixdns", "-port", "53", "-forward", "8.8.8.8:53"]
+CMD []
